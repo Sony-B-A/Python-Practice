@@ -48,3 +48,17 @@ print(f"{data[0]}'s average marks is: {avg_marks}")
 # sum() doesn't modify that
 
 # ✅ TEST 4 — Dictionary + Logic
+info = {
+    "Phy":91,
+    "che":93,
+    "math":96,
+    "bio":96
+}
+
+def fxn(i):
+    mini = min(i.values())
+    for sub in i:
+        if(i.get(sub) == mini):
+            return sub, mini
+s, low = fxn(info)
+print(f"Subject with minimum marks is {s} with the marks {low}")
