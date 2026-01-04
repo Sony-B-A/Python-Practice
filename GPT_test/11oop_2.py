@@ -62,3 +62,24 @@ def fxn(i):
             return sub, mini
 s, low = fxn(info)
 print(f"Subject with minimum marks is {s} with the marks {low}")
+
+
+# ✅ TEST 5 — OOP (Very Important)
+
+class student:
+    college = "xyz"
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+    def res(self):
+        if(self.marks >= 40 and self.marks <= 100):
+            return "pass"
+        elif(self.marks >= 0 and self.marks < 40):
+            return "fail"
+        else:
+            return "invalid marks"
+
+s1 = student("A", 79)
+s2 = student("B", 39)
+s3 = student("c", 102)
+print(f"student {s1.name}'s result: {s1.res()}", f"student {s2.name}'s result: {s2.res()}", f"student {s3.name}'s result: {s3.res()}", sep = "\n")
