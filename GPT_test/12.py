@@ -12,4 +12,8 @@ class sentence_analyzer:
         return long_word_list
 sent = input("Enter a sentence: ")
 obj = sentence_analyzer(sent)
-print(f"This sentence has {len(obj.long_word())} long words (min of 3 char)", f"The long words are: {obj.long_word()}", sep = "\n")
+# print(f"This sentence has {len(obj.long_word())} long words (min of 3 char)", f"The long words are: {obj.long_word()}", sep = "\n")
+# I am Calling the function twice which makes it to execute two times which increase complexity while executing 
+# hence it can be modified like this below
+lwl = obj.long_word()
+print(f"This sentence has {len(lwl)} words of min length 3 letters\nThe long words are: {lwl}")
