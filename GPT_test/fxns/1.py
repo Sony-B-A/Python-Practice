@@ -76,7 +76,7 @@ compute(2, 2)
 def PRIME(n):
     if n <= 1:
         return False
-    for i in range(2, n):
+    for i in range(2, n): #this doesn't run for n = 2
         if (n % i == 0):
             # break -> Wrong!!!
             return False

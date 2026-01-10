@@ -10,7 +10,7 @@ def fxn(data):
     high_marks = max(data.values())
     for key in data:
         if(data.get(key) == high_marks):
-            name = key
+            break
     return key, high_marks
 
 name, score = fxn(marks)
