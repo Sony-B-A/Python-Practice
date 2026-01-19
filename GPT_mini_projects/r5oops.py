@@ -1,4 +1,15 @@
-# Build a Notification-based Banking System using OOP concepts.
+"""
+Banking System (OOP Mini Project)
+
+Concepts Used:
+- Encapsulation (private variables, getters)
+- Inheritance and method overriding
+- Abstraction using abc module
+
+Purpose:
+Practice Object-Oriented Programming in Python.
+"""
+
 
 from abc import ABC, abstractmethod
 class Notification(ABC):
